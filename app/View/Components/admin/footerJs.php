@@ -5,9 +5,8 @@ namespace App\View\Components\admin;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use Illuminate\Support\Facades\Auth;
 
-class header extends Component
+class footerJs extends Component
 {
     /**
      * Create a new component instance.
@@ -22,7 +21,6 @@ class header extends Component
      */
     public function render(): View|Closure|string
     {
-        $user = Auth::user();
-        return view('components.admin.header' , compact('user'));
+        return view('components.admin.footer-js');
     }
 }

@@ -25,6 +25,8 @@
 	<link rel="stylesheet" href="{{ asset('assets/css/dark-theme.css ') }}" />
 	<link rel="stylesheet" href="{{ asset('assets/css/semi-dark.css ') }}" />
 	<link rel="stylesheet" href="{{ asset('assets/css/header-colors.css ') }}" />
+	<link href="{{ asset('assets/plugins/datatable/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet" />
+
 	<title>Rocker - Bootstrap 5 Admin Dashboard Template</title>
 </head>
 <body>

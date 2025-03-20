@@ -3,6 +3,7 @@
 <x-admin.sidebar></x-admin.sidebar>
 @yield('content')
 <x-admin.footer></x-admin.footer>
+<x-admin.footer-js></x-admin.footer-js>
 
 
 

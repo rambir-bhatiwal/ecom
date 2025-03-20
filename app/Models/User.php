@@ -6,7 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
+use App\Models\Role;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
@@ -21,6 +21,15 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'phone' ,
+        'address',
+        'profile',
+        'insta_profile',
+        'fb_profile',
+        'twitter_profile',
+        'linkdin_profile',
+        'git_profile',
+        'website',
     ];
 
     /**
@@ -44,5 +53,18 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }
+
+    public function hasRole($role)
+    {
+        if ($this->roles()->where('slug', $role)->first()) {
+            return true;
+        }
+        return false;
     }
 }
