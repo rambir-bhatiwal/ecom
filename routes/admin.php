@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\SizeController;
 use App\Http\Controllers\Admin\ColorController;
 use App\Http\Controllers\Admin\AttributeController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\BrandController;
 
 Route::prefix('admin')->middleware('admin')->group(function () {
     // Route::get('/profile', function () {
@@ -60,7 +61,17 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('/categories-attributes', [CategoryController::class, 'index_attribute']);
     Route::post('/categories-attributes/store', [CategoryController::class, 'store_attribute']);
     Route::get('/categories-attributes/delete/{id}', [CategoryController::class, 'destroy_attribute']);
-    
+   
+    // brands route
+    Route::get('/brands', [BrandController::class, 'index']);
+    Route::post('/brands/store', [BrandController::class, 'store']);
+    Route::get('/brands/delete/{id}', [BrandController::class, 'destroy']);
+
+    // Tax Route
+    Route::get('/tax', [TaxController::class, 'index']);
+    Route::post('/tax/store', [TaxController::class, 'store']);
+    Route::get('/tax/delete/{id}', [TaxController::class, 'destroy']);
+
 });
          
 

@@ -100,6 +100,20 @@
 						</li>
 					</ul>
 				</li>
+				<li class="menu-label">Brands</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-cart'></i>
+						</div>
+						<div class="menu-title">Brands</div>
+					</a>
+					<ul>
+						<li> <a href="{{ url('/admin/brands') }}"><i class="bx bx-right-arrow-alt"></i>Category</a>
+						</li>
+						<li> <a href="{{ url('/admin/brands-attributes') }}"><i class="bx bx-right-arrow-alt"></i>Categories Attribute</a>
+						</li>
+					</ul>
+				</li>
 				<li>
 					<a class="has-arrow" href="javascript:;">
 						<div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
