@@ -79,7 +79,24 @@
 					<ul>
 						<li> <a href="{{ url('/admin/attributes') }}"><i class="bx bx-right-arrow-alt"></i>Attributes Names</a>
 						</li>
-						<li> <a href="{{ url('/admin/attribute-values') }}"><i class="bx bx-right-arrow-alt"></i>Attributes Values</a>
+						<li> <a href="{{ url('/admin/attributes-values') }}"><i class="bx bx-right-arrow-alt"></i>Attributes Values</a>
+						</li>
+						<li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
+						</li>
+						<li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-cart'></i>
+						</div>
+						<div class="menu-title">Category</div>
+					</a>
+					<ul>
+						<li> <a href="{{ url('/admin/categories') }}"><i class="bx bx-right-arrow-alt"></i>Category</a>
+						</li>
+						<li> <a href="{{ url('/admin/attributes-values') }}"><i class="bx bx-right-arrow-alt"></i>Attributes Values</a>
 						</li>
 						<li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
 						</li>

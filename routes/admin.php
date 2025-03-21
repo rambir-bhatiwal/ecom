@@ -44,11 +44,18 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::get('/attributes', [AttributeController::class, 'index']);
     Route::post('/attributes/store', [AttributeController::class, 'store']);
     Route::get('/attributes/delete/{id}', [AttributeController::class, 'destroy']);
-    
+
     // Attribute Value Route
-    Route::get('/attributes-value', [AttributeController::class, 'index_value']);
-    Route::post('/attributes-value/store', [AttributeController::class, 'store_value']);
-    Route::get('/attributes-value/delete/{id}', [AttributeController::class, 'destroy_value']);
+    Route::get('/attributes-values', [AttributeController::class, 'index_value']);
+    Route::post('/attributes-values/store', [AttributeController::class, 'store_value']);
+    Route::get('/attributes-values/delete/{id}', [AttributeController::class, 'destroy_value']);
+
+    // category
+    Route::get('/categories', [CategoryController::class, 'index']);
+    Route::post('/categories/store', [CategoryController::class, 'store']);
+    Route::get('/categories/delete/{id}', [CategoryController::class, 'destroy']);
+
+    // sub category
 });
          
 
