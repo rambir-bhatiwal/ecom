@@ -18,12 +18,12 @@
 						</div>
 						<div class="menu-title">Dashboard</div>
 					</a>
-					<ul>
+					<!-- <ul>
 						<li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>Default</a>
 						</li>
 						<li> <a href="index2.html"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
 						</li>
-					</ul>
+					</ul> -->
 				</li>
 				<li>
 					<a href="javascript:;" class="has-arrow">
@@ -81,10 +81,10 @@
 						</li>
 						<li> <a href="{{ url('/admin/attributes-values') }}"><i class="bx bx-right-arrow-alt"></i>Attributes Values</a>
 						</li>
-						<li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
+						<!-- <li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
 						</li>
 						<li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
-						</li>
+						</li> -->
 					</ul>
 				</li>
 				<li>
@@ -96,11 +96,7 @@
 					<ul>
 						<li> <a href="{{ url('/admin/categories') }}"><i class="bx bx-right-arrow-alt"></i>Category</a>
 						</li>
-						<li> <a href="{{ url('/admin/attributes-values') }}"><i class="bx bx-right-arrow-alt"></i>Attributes Values</a>
-						</li>
-						<li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
-						</li>
-						<li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
+						<li> <a href="{{ url('/admin/categories-attributes') }}"><i class="bx bx-right-arrow-alt"></i>Categories Attribute</a>
 						</li>
 					</ul>
 				</li>

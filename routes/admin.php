@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\HomeBannerController;
 use App\Http\Controllers\Admin\SizeController;
 use App\Http\Controllers\Admin\ColorController;
 use App\Http\Controllers\Admin\AttributeController;
+use App\Http\Controllers\Admin\CategoryController;
 
 Route::prefix('admin')->middleware('admin')->group(function () {
     // Route::get('/profile', function () {
@@ -55,7 +56,11 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::post('/categories/store', [CategoryController::class, 'store']);
     Route::get('/categories/delete/{id}', [CategoryController::class, 'destroy']);
 
-    // sub category
+    // category attribute
+    Route::get('/categories-attributes', [CategoryController::class, 'index_attribute']);
+    Route::post('/categories-attributes/store', [CategoryController::class, 'store_attribute']);
+    Route::get('/categories-attributes/delete/{id}', [CategoryController::class, 'destroy_attribute']);
+    
 });
          
 
