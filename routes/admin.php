@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\ColorController;
 use App\Http\Controllers\Admin\AttributeController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\BrandController;
+use App\Http\Controllers\Admin\TaxController;
 
 Route::prefix('admin')->middleware('admin')->group(function () {
     // Route::get('/profile', function () {
@@ -72,6 +73,7 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     Route::post('/tax/store', [TaxController::class, 'store']);
     Route::get('/tax/delete/{id}', [TaxController::class, 'destroy']);
 
+    
 });
          
 

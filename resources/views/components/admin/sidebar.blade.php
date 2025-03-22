@@ -114,7 +114,11 @@
 						</li>
 					</ul>
 				</li>
+				<li class="menu-label">Tax</li>
 				<li>
+					<a href="{{ url('/admin/tax') }}">Tax</a>
+				</li>
+				<!-- <li>
 					<a class="has-arrow" href="javascript:;">
 						<div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
 						</div>
@@ -186,8 +190,8 @@
 						<li> <a href="icons-feather-icons.html"><i class="bx bx-right-arrow-alt"></i>Feather Icons</a>
 						</li>
 					</ul>
-				</li>
-				<li class="menu-label">Forms & Tables</li>
+				</li> -->
+				<!-- <li class="menu-label">Forms & Tables</li>
 				<li>
 					<a class="has-arrow" href="javascript:;">
 						<div class="parent-icon"><i class='bx bx-message-square-edit'></i>
@@ -251,7 +255,7 @@
 						<li> <a href="authentication-lock-screen.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Lock Screen</a>
 						</li>
 					</ul>
-				</li>
+				</li> -->
 				<li>
 					<a href="{{ url('/admin/profile') }}">
 						<div class="parent-icon"><i class="bx bx-user-circle"></i>
